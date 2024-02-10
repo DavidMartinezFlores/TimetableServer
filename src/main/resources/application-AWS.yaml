@@ -1,2 +1,9 @@
 server:
     port: 80
+logging:
+  file: /tmp/archivo.log
+  level:
+    root: INFO
+  file:
+    max-size: 1MB
+    max-history: 10
