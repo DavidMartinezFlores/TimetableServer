@@ -35,4 +35,5 @@ jobs:
       run: sudo kill -9 $(sudo lsof -t -i:80) || true
 
     - name: Run Jar File
-      run: sudo java -jar /home/ubuntu/actions-runner/_work/TimetableServer/TimetableServer/target/TimetableServer-0.0.1-SNAPSHOT.jar -Dspring.config.location=file:/home/ubuntu/actions-runner/_work/TimetableServer/TimetableServer/src/main/resources/application-AWS.yaml
+      run: sudo java -jar /home/ubuntu/actions-runner/_work/TimetableServer/TimetableServer/target/TimetableServer-0.0.1-SNAPSHOT.jar --spring.profiles.active=AWS
+
