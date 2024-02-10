@@ -1,6 +1,7 @@
 server:
     port: 80
 logging:
+    pattern.console: 
     level:
         root: WARN
     file:
